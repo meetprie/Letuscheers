@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="images/favicon.png" rel="icon" type="image/icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Letus Cheers | Cart-Mt Page</title>
+</head>
+
+<body>
+    <!-- <div class="pageloader">
+            <img src="images/loader.gif" alt=""/>
+        </div> -->
+    <!--        <div class="alert-popup">
+            <div class="age-box">
+                <form>
+                    <h2>Are you over 21 years of age?</h2>
+                    <div class="age-btn-set">
+                        <button type="submit" class="btn age-gate-submit-no">No</button>
+                        <button type="button" class="btn age-gate-submit-yes">Yes</button>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" checked class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Remember me</label>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+    <div class="top-header-height top-header-height2"></div>
+    <header class="">
+        <div class="header-top">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.jpg" class="img-fluid" alt="Letuscheers" /></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="cart-header text-center">
+                    <ul>
+                        <li class="cart-item">
+                            <a href="cart.html" class="active">
+                              <i class="fas fa-shopping-cart"></i><br>
+                              Bag
+                            </a>
+                        </li>
+                        <li class="cart-item">
+                            <a href="login.html">
+                              <i class="fas fa-sign-in-alt"></i><br>
+                              Login
+                            </a>
+                        </li>
+                        <li class="cart-item">
+                            <a href="cart.html">
+                              <i class="fas fa-truck"></i><br>
+                              Shipping
+                            </a>
+                        </li>
+                        <li class="cart-item">
+                            <a href="cart.html">
+                              <i class="far fa-credit-card"></i><br>
+                              Payment
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="back_page d-inline-block w-100 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav">
+                        <li>
+                            <a href="index.html" class="">Home</a>
+                        </li>
+                        <span class="mx-2">/</span>
+                        <li>
+                            <a href="cart.html" class="">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cartempty d-inline-block w-100 position-relative d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="title">
+                <i class="fas fa-shopping-bag"></i>
+                <h2>SHOPPING CART IS EMPTY</h2>
+                <p class="text">You have no items in your shopping cart.</p>
+                <a href="#" class="btn bg-orange">Return To Shop</a>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <p>Copyright 2019 <a href="index.html">Letus Cheers</a>. All Rights Reserved</p>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="foot-social">
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back2Top"><i class="fas fa-angle-double-up"></i></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        $(window).load(function() {
+            $(".pageloader").fadeOut("slow");
+        });
+    </script>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("rangedemo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+    </script>
+    <script type="text/javascript">
+        $('.btn-minuse').on('click', function() {
+            $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) - 1)
+        })
+
+        $('.btn-pluss').on('click', function() {
+            $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) + 1)
+        })
+    </script>
+    <script src="js/custome.js"></script>
+
+</body>
+
+</html>
